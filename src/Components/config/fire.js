@@ -1,0 +1,21 @@
+import firebase from 'firebase';
+import 'firebase/auth';
+
+const firebaseConfig = {
+    apiKey: "AIzaSyC3awrgNgoNAx6_EM26vNJoAX2elyzKtmY",
+    authDomain: "blogreact-25e8d.firebaseapp.com",
+    projectId: "blogreact-25e8d",
+    storageBucket: "blogreact-25e8d.appspot.com",
+    messagingSenderId: "134496777386",
+    appId: "1:134496777386:web:5c2556399c2bc9eaeb0cd3",
+    measurementId: "G-XGJMKKC99T"
+  };
+
+  const fire = firebase.initializeApp(firebaseConfig);
+
+  export default fire;
+
+
+
+
+  

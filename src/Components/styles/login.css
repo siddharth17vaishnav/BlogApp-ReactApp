@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width:10%;
+    padding-top: 8px;
+}
+
+h1{
+    font-size:32px;
+    font-family:'Klee One', cursive;;
+}
+
+.btnlogin{
+   padding-top: 20px;
+   cursor: pointer;
+   border: none;
+   transition:all .4s ;
+}
+
+.newuser{
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
