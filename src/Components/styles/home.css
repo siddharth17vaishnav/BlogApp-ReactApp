@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
-
+*{
+    padding-top: 20px;
+    margin-top: 20px;
+}
 .tweetbox_input img{
     border-radius:50%;    ;
     height:40px;
@@ -46,4 +49,18 @@ font-family:'Klee One', cursive;;
 h3{
     font-size:18px;
    margin-left:20px;
+}
+
+
+
+.accountsection:hover:after {
+    content: attr(data-hover);
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 200;
+}
+
+a{
+    text-decoration: none;
+   
 }

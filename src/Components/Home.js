@@ -3,7 +3,9 @@ import {  Container } from '@material-ui/core';
 import './styles/home.css';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import fire from "./config/fire"
+import fire from "./config/fire";
+import profile from '../img/profile.png';
+import {Link} from 'react-router-dom';
 
 const Home =()=>{
     const[post,setPost]=useState('');
@@ -39,7 +41,12 @@ const Home =()=>{
 
     return(
         <div>  
-           <Container maxWidth="sm">
+           <Container maxWidth="md" style={{paddingTop:'20px'}}>
+           <Link to="/account">
+          <div className="accountsection text-right" data-hover=" My Account">
+              <span ><img  src={profile} alt="My Accounts" style={{width:'5%',paddingBottom:'10px'}} /></span>
+          </div>
+          </Link>
                <Card style={{border: '1px solid'}}>
                    <CardContent>
                        

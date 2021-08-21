@@ -5,6 +5,7 @@ import Login from './Components/Login';
 import fire from './Components/config/fire';
 import signup from './Components/signup';
 import data from './Components/data';
+import Account from './Components/Account';
 
 
 class App extends Component{
@@ -38,6 +39,7 @@ class App extends Component{
       <Route path="/home" component={Home}/>
       <Route path="/login" component={Login}/>
       <Route path="/signup" component={signup}/>
+      <Route path="/account" component={Account}/>
       { this.state.user ? ( <Home data={data} /> ) : ( <Login /> ) }
       </Switch>
       </>
