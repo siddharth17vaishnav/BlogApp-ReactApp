@@ -44,7 +44,7 @@ const Home =()=>{
            <Container maxWidth="md" style={{paddingTop:'20px'}}>
            <Link to="/account">
           <div className="accountsection text-right" data-hover=" My Account">
-              <span ><img  src={profile} alt="My Accounts" style={{width:'5%',paddingBottom:'10px'}} /></span>
+              <span ><img  src={profile} alt="My Accounts" style={{width:'60px',height:'60px',paddingBottom:'10px'}} /></span>
           </div>
           </Link>
                <Card style={{border: '1px solid'}}>

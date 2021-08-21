@@ -1,7 +1,11 @@
 import React,{useState,useEffect} from 'react';
-import fire, {auth,db} from './config/fire.js'
+import  {auth,db} from './config/fire.js'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useHistory } from "react-router";
+import './styles/account.css';
+import { Button, Card,CardContent, Container } from '@material-ui/core';
+import profile from '../img/profile.png';
+import {Link} from 'react-router-dom';
 
 const Account = () => {
     const [user, loading] = useAuthState(auth);
@@ -35,16 +39,39 @@ const Account = () => {
   }
    
     return (
-        <div className="dashboard">
-      <div className="dashboard__container">
-        Logged in as
-        <div>{name}</div>
-        <div>{user?.email}</div>
-        <button className="dashboard__btn" onClick={signout}>
+      <Container maxWidth="sm">
+        <div className="goback">
+          
+            <Link to="/home">
+            <span>
+              <i className="fa fa-chevron-left">
+                <span>Go Back to Homepage</span>
+                </i>
+                </span>
+                </Link>
+               
+        </div>
+          <div className="header">
+        <h1>My Account</h1>
+        </div>
+        
+        <div className="content" >
+        <Card className="cardcontent">
+          <CardContent>
+        Logged in as:
+        <div className="profilepic">
+           <img src={profile} alt="profile"/>
+         </div>
+        <h1 style={{marginTop:"40px"}}>{user?.email}</h1>
+        <div className="logoutbtn">
+        <Button className="primary" variant="outlined" color="primary" style={{borderRadius:"20%"}} onClick={signout}>
           Logout
-        </button>
-      </div>
-    </div>
+        </Button>
+        </div>
+        </CardContent>
+        </Card>
+        </div>
+    </Container>
     )
 }
 

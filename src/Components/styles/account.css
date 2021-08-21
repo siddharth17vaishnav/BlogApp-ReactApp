@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    padding-top: 20px;
+    font-style:bold;
+    padding-bottom: 20px;
+}
+
+.cardcontent{
+    box-shadow: 13px 15px 37px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 13px 15px 37px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 15px 37px 3px rgba(0,0,0,0.75);
+}
+
+.logoutbtn{
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    margin-top: 50px;
+}
+
+img{
+    height:100px;
+    margin-top: 12px;
+}
+.goback{
+    display:center;
+    margin-top: 20px;
+}
