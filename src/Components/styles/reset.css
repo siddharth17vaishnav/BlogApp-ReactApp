@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.btnreset{
+    padding-top: 12px;
+    display: inline-block;
+}
+.header{
+    font-style: bold;
+    font-size:30px;
+}

@@ -7,8 +7,9 @@ import TextField from '@material-ui/core/TextField';
 import {Link,Redirect} from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Navbar from './Navbar';
 
-class Login extends Component {
+class Signup extends Component {
     
   constructor(props)
     {
@@ -49,12 +50,13 @@ render()
     return (
 
     <div>
+        <Navbar/>
      <Container maxWidth="sm">
           <div style={{paddingTop:"100px"}}>
               <Card >
                   <CardContent>
               <div className="header">
-              <img className="logo" src={logo} alt="BlogApplogo"/>
+              <img className="logo" src={logo} alt="BlogApplogo" style={{width:"88px"}}/>
               <h1>Register into BlogApp</h1>
               </div>
               <div className="forminput" style={{paddingTop:"20px"}}>
@@ -99,4 +101,4 @@ render()
 }
 }
 
-export default Login;
+export default Signup;

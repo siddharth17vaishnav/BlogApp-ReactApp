@@ -15,11 +15,21 @@ const  firebaseConfig = {
   const auth = fire.auth();
 const db = fire.firestore();
 
+const resetpassword=async(email)=>{
+  try {
+      await auth.sendPasswordResetEmail(email);
+      alert("reset link has been sent!");
+    } catch (err) {
+      alert("Enter an valid email address");
+    }
+
+}
+
 
 
 
 export default fire;
-export  { db,auth};
+export  { db,auth,resetpassword};
 
 
 

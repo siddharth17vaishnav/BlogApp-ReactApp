@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import {Link, Redirect} from 'react-router-dom';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
+import Navbar from './Navbar';
 
 
 class Login extends Component {
@@ -52,6 +53,7 @@ render()
     return (
 
     <div>
+        <Navbar/>
      <Container maxWidth="sm">
           <div style={{paddingTop:"100px"}}>
               <Card >
@@ -59,7 +61,7 @@ render()
 
                 
               <div className="header">
-              <img className="logo" src={logo} alt="BlogApplogo"/>
+              <img className="logo" src={logo} alt="BlogApplogo" style={{width:"88px"}}/>
               <h1>Login into BlogApp</h1>
               </div>
               <div className="forminput" style={{paddingTop:"20px"}}>
@@ -89,6 +91,9 @@ render()
                         <Button variant="outlined" color="primary" onClick={this.login}>Login</Button>
                         </div>
                   </form>
+                  <div className="newuser">
+                      <span><Link to="/resetpassword">Foreget Password ! Reset Here</Link></span>
+                  </div>
                   <div className="newuser">
                       <span><Link to="/signup">New User ! Register here</Link></span>
                   </div>
